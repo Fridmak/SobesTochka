@@ -1,4 +1,6 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Text.RegularExpressions;
+using System.Collections.Generic;
 
 
 class HotelCapacity
@@ -40,9 +42,9 @@ class HotelCapacity
         });
 
         var currentGuests = 0;
-        foreach (var (date, change) in events)
+        foreach (var moment in events) // Mono moment
         {
-            currentGuests += change;
+            currentGuests += moment.change;
             if (currentGuests > maxCapacity)
                 return false;
         }
