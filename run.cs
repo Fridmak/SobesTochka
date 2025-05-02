@@ -51,7 +51,7 @@ class HotelCapacity
     }
     
     // Там у вас в тестах лишний перенос. так что будем еще проверять корректность ввода без фанатизма
-    static void Main()
+    static void Mazin()
     {
         string line;
         
