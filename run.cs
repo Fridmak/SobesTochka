@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
-
-
 class HotelCapacity
 {
     // Я тут еще везде var поставил где компилятор нормально определяет тип переменной
